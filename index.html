@@ -10,94 +10,121 @@
   <body>
     
     <header class="cabecalho">
-      <h1><img src="" alt="Imagem Logo" class="logo"></h1>
-      <nav class="menu">
+      <h1><img class="cabecalho__logo" src="" alt="Imagem Logo"></h1>
+      <nav class="cabecalho__menu">
         <ul class="menu__lista">
-          <a href="#" class="menu__link"><li class="menu__item">Quem sou</li></a>
-          <a href="#" class="menu__link"><li class="menu__item">Projetos</li></a>
-          <a href="#" class="menu__link"><li class="menu__item">Portfólio</li></a>
-          <a href="#" class="menu__link"><li class="menu__item">Contato</li></a>
+          <li class="menu__item"><a href="#" class="menu__link">Quem sou</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Projetos</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Portfólio</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Contato</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="principal">
+
       <section class="apresentacao">
-        <div class="container-titulo">
-          <h1>Olá, eu sou <br> <span>Alfredo Jimenes</span><br>Front-end developer</h1>
+        <div class="apresentacao__container-titulo">
+          <h1 class="apresentacao__titulo">
+            Oi, eu sou <br>
+            <span class="span-realce">Alfredo Jimenes</span><br>
+            Front-end developer
+          </h1>
         </div>
-        <figure>
-          <img class="imagem-capa" src="./assets/imagens/notebook.jpg" width="300px" alt="imagem de perfil">
+        <figure class="apresentacao__container-img">
+          <img class="apresentacao__img" src="./assets/imagens/notebook.jpg" width="300px" alt="imagem de perfil">
         </figure>
       </section>
 
       <section class="quem-sou">
-        <h2>Quem sou</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quis atque repellendus harum itaque error facilis, est similique mollitia perspiciatis dignissimos asperiores veritatis consequuntur. Illo ratione voluptatum iste nihil qui.</p>
+        
+        <figure class="quem-sou__container-foto">
+          <img class="quem-sou__foto" src="./assets/imagens/profile1.png" alt="">
+        </figure>
+        <article class="quem-sou__conteudo">
+          <h2 class="quem-sou__titulo">Quem sou</h2>
+          <p class="quem-sou__descricao">Sou um dev que descobriu sua vocação para programar no seu primeiro contato com a linguagem Fortran nas aulas da faculdade de Meteorologia.</p>
+        </article>
+
       </section>
 
       <section class="projetos">
-        <h2>Projetos</h2>
-        <article class="projeto">
-          <h3>Projeto 1</h3>
-          <p>Descrição do serviço/projeto</p>
-        </article>
-        <article class="projeto">
-          <h3>Projeto 2</h3>
-          <p>Descrição do serviço/projeto</p>
-        </article>
-        <article class="projeto">
-          <h3>Projeto 3</h3>
-          <p>Descrição do serviço/projeto</p>
-        </article>
-        <a href="http://github.com/jimenes30">Repositórios no Github</a>
+
+        <h2 class="projetos__titulo">Projetos</h2>
+
+        <div class="container-projeto">
+          
+          
+          <article class="projeto">
+            <h3 class="projeto__titulo">Barbearia Alura</h3>
+            <a href="https://jimenes30.github.io/desafio-alura/"><img class="projeto__imagem" src="./assets/imagens/barbearia-alura.png" alt=""></a>
+            <!-- <p class="projeto__descricao">Desafio feito com base na formação Front end da Alura, trata-se de um site de uma barbearia, mas que pode ser aplicado como case para um negócio local, onde o cliente poderá, conhecer mais sobre o seu negócio, consultar o preço dos produtos ou serviços prestados, pode encontrar a localização via Google Maps, preencher um formulário para ser notificado futuramente, assistir um vídeo de demonstração e entrar em contato via email ou telefone.</p> -->
+            <p class="projeto__descricao">Desafio do curso de HTML5 e CSS3 da Alura.</p>
+          </article>
+          
+          <article class="projeto">
+            <h3 class="projeto__titulo">Seu Bar</h3>
+            <a href="https://jimenes30.github.io/site-bar/"><img class="projeto__imagem" src="./assets/imagens/site-bar.png" alt=""></a>
+            <p class="projeto__descricao">Case para um bar local, com o básico para o cliente entrar em contato.</p>
+          </article>
+
+          <article class="projeto">
+            <h3 class="projeto__titulo">Churrascômetro</h3>
+            <a href="https://jimenes30.github.io/churrascrometro/"><img class="projeto__imagem" src="./assets/imagens/churrascometro.png" alt=""></a>
+            <p class="projeto__descricao">Site que estima a quantidade de comida e bebida para um churrasco.</p>
+          </article>
+
+        </div>
+        <img class="projetos__img-github" src="./assets/imagens/github.svg" alt="">
+        <a class="projetos__link-github" href="https://github.com/jimenes30?tab=repositories">Repositórios no Github</a>
       </section>
 
       <section class="servicos">
-        <h2>Serviços</h2>
-        <article class="servico">
-          <h3>Serviço 1</h3>
-          <img src="" alt="imagem de um servico">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia laboriosam iure culpa, voluptate itaque expedita magnam nihil. Odit fugit nostrum tempora esse?</p>
-        </article>
-        <article class="servico">
-          <h3>Serviço 2</h3>
-          <img src="" alt="imagem de um servico">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia laboriosam iure culpa, voluptate itaque expedita magnam nihil. Odit fugit nostrum tempora esse?</p>
-        </article>
-        <article class="servico">
-          <h3>Serviço 3</h3>
-          <img src="" alt="imagem de um servico">
-          <p>Descrição do serviço/projeto</p>
-        </article>
+        <h2 class="servicos__titulo">Serviços</h2>
+        <div class="container-servico">
+          <article class="servico">
+            <h3 class="servico__titulo">UI Design</h3>
+            <img class="servico__imagem" src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/000000/external-ui-online-learning-kiranshastry-gradient-kiranshastry.png" alt="imagem de um servico">
+            <p class="servico__descricao">Desenho interface de forma que ela seja clara, objetiva e principalmente intuitiva para o usuário.</p>
+          </article>
+          <article class="servico">
+            <h3 class="servico__titulo">Desenvolvimento</h3>
+            <img class="servico__imagem" src="https://img.icons8.com/cotton/64/000000/code.png" alt="imagem de um servico">
+            <p class="servico__descricao">Desenvolvo sites para negócios locais, landing pages, e blogs.</p>
+          </article>
+          <article class="servico">
+            <h3 class="servico__titulo">Design Responsivo</h3>
+            <img class="servico__imagem" src="https://img.icons8.com/stickers/100/000000/developer-mode.png" alt="imagem de um servico">
+            <p class="servico__descricao">Desenvolvo interfaces que se adaptam para diferentes telas de Desktop a Mobile.</p>
+          </article>
+        </div>
       </section>
 
       <section class="tecnologias">
-        <div>
+        <article>
           <h3>Tecnologias</h3>
-          <p>descrição das tecnologias</p>
-        </div>
-        <div>
+        </article>
+        <article>
           <p>HTML5</p>
-          <img src="" alt="imagem de uma tecnologia">
-        </div>
-        <div>
+          <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="imagem de uma tecnologia">
+        </article>
+        <article>
           <p>CSS3</p>
-          <img src="" alt="imagem de uma tecnologia">
-        </div>
-        <div>
+          <img src="https://img.icons8.com/color/48/000000/css3.png" alt="imagem de uma tecnologia">
+        </article>
+        <article>
           <p>JavaScript</p>
-          <img src="" alt="imagem de uma tecnologia">
-        </div>
+          <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt="imagem de uma tecnologia">
+        </article>
       </section>
     </main>
 
     <footer class="rodape">
       <p class="copyrigth">&copy; 2022 Alfredo Jimenes</p>
+      <a target="_blank" href="https://icons8.com">icons by Icons8</a>
       <div class="redes-sociais">
-        <a href="#"><img src="" alt="Imagem de uma rede social"></a>
-        <a href="#"><img src="" alt="Imagem de uma rede social"></a>
-        <a href="#"><img src="" alt="Imagem de uma rede social"></a>
+        <a href="https://www.linkedin.com/in/alfredo-jimenes-front-end/"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="Imagem de uma rede social"></a>
+        <a href="https://github.com/jimenes30?tab=repositories"><img src="./assets/imagens/github.svg" alt="Imagem de uma rede social"></a>
       </div>
     </footer>
 

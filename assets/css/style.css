@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  color: #f0f0f0;
+  color: #DEE6F1;
   background-color: #051120;
 }
 
@@ -12,10 +12,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 40px;
+  padding: 15px 40px;
   /* box-shadow: 0px 5px 0px #091C34; */
-  border-bottom: #A7C8F1 1px solid;
+  /* border-bottom: #a7c8f1a6 1px solid; */
+  border-bottom: #a7c8f170 1px solid;
 }
+
+/* .cabecalho__menu{} */
 
 .menu__lista {
   display: flex;
@@ -27,24 +30,26 @@ body {
   font-size: 1.1rem;
 }
 
-.menu__link {
+.menu__link:hover {
   color: #f0f0f0;
-  text-decoration: none;
-}
-
-.menu__item:hover {
-  color: #f0f0f050;
   border-bottom: 1px solid #A7C8F1;
 }
 
+.menu__link {
+  color: #DEE6F1;
+  text-decoration: none;
+}
+
+/* .principal{} */
+
 .apresentacao {
-  height: calc(100vh - 98px);
+  height: calc(100vh - 128px);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.container-titulo {
+.apresentacao__container-titulo {
   width: 50%;
   height: 100%;
   margin-left: 5%;
@@ -54,17 +59,19 @@ body {
   align-items: center;
 }
 
-.apresentacao h1 {
+.apresentacao__titulo {
+  color: #DEE6F1;
   font-size: 2rem;
-  border-bottom: #A7C8F1 1px solid;
+  border-bottom: #a7c8f170 1px solid;
   padding-bottom: 10px;
 }
 
-.apresentacao h1 span{
+.span-realce {
   font-size: 4rem;
+  color: #A7C8F1;
 }
 
-figure {
+.apresentacao__container-img {
   height: 100%;
   width: 50%;
   margin: 0 auto;
@@ -73,7 +80,7 @@ figure {
   align-items: center;
 }
 
-.imagem-capa {
+.apresentacao__img {
   padding: 20px;
   height: 300px;
   width: 300px;
@@ -81,8 +88,178 @@ figure {
 }
 
 .quem-sou {
-
+  background-color: #0F1D2E;
   display: flex;
+  justify-content: space-evenly;
+  padding: 8rem 0;
+}
+
+.quem-sou__container-foto {
+  object-fit: cover;
+  display: flex;
+  /* border: #a7c8f170 1px solid; */
+}
+
+.quem-sou__foto {
+  width: 250px;
+}
+
+.quem-sou__conteudo {
+  width: 45%;
+}
+
+.quem-sou__titulo {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.quem-sou__descricao {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #A7C8F1;
+}
+
+.projetos {
+  background-color: #051120;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  border: 1px solid #fff;
+  padding: 8rem 0;
+
+}
+
+.projetos__titulo {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.container-projeto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.projeto {
+  margin: 0 auto;
+  background-color: #0F1D2E;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.projeto:hover {
+  outline: 1px solid #A7C8F1;
+  transform: scale(1.01);
+}
+
+.projeto__titulo {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.projeto__imagem {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  margin: 1.5rem 0;
+  border-radius: 5px;
+}
+
+.projeto__descricao {
+  color: #A7C8F1;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.projetos__link-github {
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #DEE6F1;
+}
+.projetos__img-github {
+  width: 45px;
+  display: flex;
+  align-self: center;
+  background-color: #DEE6F1;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+.servicos {
+  background-color: #0F1D2E;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4rem 0 4rem 0;
+}
+
+.servicos__titulo {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.container-servico {
+  display: flex;
+  
+}
+
+.servico__titulo {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.servico {
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  background-color: #051120;
+}
+
+.servico:hover {
+  border: 1px solid #A7C8F1;
+  transform: scale(1.1);
+}
+
+.servico__imagem {
+  margin: 1.5rem 0;
+  border-radius: 5px;
+  display: block;
+  margin: 2rem auto;
+  height: 64px;
+}
+
+.servico__descricao {
+  color: #A7C8F1;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+.tecnologias {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8rem 0;
+}
+
+.rodape {
+  background-color: #0F1D2E;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8rem 0;
 }
