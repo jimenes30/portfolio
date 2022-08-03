@@ -1,17 +1,24 @@
-element{
-font-family: 'Cinzel Decorative', cursive; /*senhor dos aneis*/
-font-family: 'Press Start 2P', cursive; /* supermario*/
-font-family: 'Prosto One', cursive; /* et force Gemini*/
-font-family: 'Iceland', cursive; /*um tech?*/
-font-family: 'Nunito Sans', sans-serif;
-font-family: 'Prompt', sans-serif;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #051120;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #A7C8F1;
+  border-radius: 10px;
+}
+
+
+
 
 .corpo {
   color: #DEE6F1;
@@ -20,15 +27,39 @@ font-family: 'Prompt', sans-serif;
 
 }
 
-.cabecalho {
+.bg {
+  background-color: #051120;
+  border-bottom: #a7c8f170 1px solid;
+}
+
+.centro {
+  text-align: center;
+}
+
+.estilo-h {
+  font-family: 'Prompt', sans-serif;
+  color: #f0f0f0;
+}
+
+.estilo-h:hover {
+  color: #A7C8F1;
+}
+
+.estilo-h:visited {
+  color: #f0f0f0;
+}
+
+/* .cabecalho {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
   border-bottom: #a7c8f170 1px solid;
+} */
+/* 
+.cabecalho__logo {
+  font-size: 1.5rem;
 }
-
-/* .cabecalho__menu{} */
 
 .menu__lista {
   display: flex;
@@ -48,9 +79,7 @@ font-family: 'Prompt', sans-serif;
 .menu__link {
   color: #DEE6F1;
   text-decoration: none;
-}
-
-/* .principal{} */
+} */
 
 .apresentacao {
   height: calc(100vh - 128px);
@@ -92,9 +121,10 @@ font-family: 'Prompt', sans-serif;
 
 .apresentacao__img {
   padding: 20px;
-  height: 300px;
-  width: 300px;
+  max-height: 60%;
+  max-width: 100%;
   border-radius: 100%;
+  object-fit: contain;
 }
 
 .quem-sou {
@@ -287,4 +317,8 @@ font-family: 'Prompt', sans-serif;
   justify-content: space-evenly;
   align-items: center;
   padding: 5rem 0;
+}
+.creditos {
+  text-decoration: none;
+  color: #A7C8F1;
 }
